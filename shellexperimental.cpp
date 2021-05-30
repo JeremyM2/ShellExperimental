@@ -25,7 +25,6 @@ int main(int argc, char const *argv[])
             tf_ss = std::chrono::high_resolution_clock::now();//tiempo final
             acum+=std::chrono::duration_cast<std::chrono::nanoseconds>(tf_ss-ti_ss);
         }
-
         std::cout<<i<<','<<acum.count()/repeticiones<<'\n';//tomando tiempo promedio
         
     }
